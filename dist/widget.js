@@ -50,7 +50,6 @@
   function createButton() {
 
     if (button) return;
-
     button = document.createElement("div");
     button.style.position = "fixed";
     button.style.bottom = "20px";
