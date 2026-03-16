@@ -60,7 +60,7 @@
     button.style.right = "20px";
     button.style.width = "60px";
     button.style.height = "60px";
-    button.style.background = "#0066ff";
+    button.style.backgroundImage = 'url("https://s-resonance.co.jp/wp-content/uploads/2026/02/cropped-logo-image-32x32.png")';
     button.style.color = "#fff";
     button.style.borderRadius = "50%";
     button.style.display = "flex";
