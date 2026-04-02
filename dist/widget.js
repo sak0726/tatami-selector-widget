@@ -30,9 +30,14 @@
   }
 
   function start() {
-
-    createButton();
-    createIframe();
+    if (!config.siteId) return;
+    fetch("https://ai-tatami-select.hibiki-labsystem.online/tenant-info?t=" + encodeURIComponent(config.siteId))
+      .then(function(res) {
+        if (!res.ok) return;
+        createButton();
+        createIframe();
+      })
+      .catch(function() {});
   }
   window.addEventListener("message", function(event) {
     //console.log("Received message:", iframe, event.data);
