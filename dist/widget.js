@@ -55,19 +55,12 @@
     button.style.position = "fixed";
     button.style.bottom = "20px";
     button.style.right = "20px";
-    button.style.width = "60px";
-    button.style.height = "60px";
-    button.style.backgroundImage = 'url("https://s-resonance.co.jp/wp-content/uploads/2026/02/cropped-logo-image-32x32.png")';
-    button.style.backgroundSize = "cover";
-    button.style.backgroundPosition = "center";
-    button.style.color = "#fff";
-    button.style.borderRadius = "50%";
-    button.style.display = "flex";
-    button.style.alignItems = "center";
-    button.style.justifyContent = "center";
+    button.style.width = "160px";
+    button.style.height = "56px";
     button.style.cursor = "pointer";
     button.style.zIndex = "2147483647";
-    button.style.fontFamily = "sans-serif";
+    button.style.filter = "drop-shadow(0 4px 8px rgba(0,0,0,0.25))";
+    button.innerHTML = '<svg width="160" height="56" viewBox="0 0 160 56" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wgB" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#56ab2f"/><stop offset="100%" stop-color="#2d6a4f"/></linearGradient></defs><rect width="160" height="56" rx="28" fill="url(#wgB)"/><rect x="14" y="10" width="32" height="32" rx="3" fill="rgba(255,255,255,0.2)"/><rect x="18" y="14" width="24" height="24" fill="rgba(255,255,255,0.9)"/><line x1="18" y1="20" x2="42" y2="20" stroke="#56ab2f" stroke-width="1"/><line x1="18" y1="26" x2="42" y2="26" stroke="#56ab2f" stroke-width="1"/><line x1="18" y1="32" x2="42" y2="32" stroke="#56ab2f" stroke-width="1"/><line x1="24" y1="14" x2="24" y2="20" stroke="#56ab2f" stroke-width="1"/><line x1="30" y1="14" x2="30" y2="20" stroke="#56ab2f" stroke-width="1"/><line x1="36" y1="14" x2="36" y2="20" stroke="#56ab2f" stroke-width="1"/><line x1="21" y1="20" x2="21" y2="26" stroke="#56ab2f" stroke-width="1"/><line x1="27" y1="20" x2="27" y2="26" stroke="#56ab2f" stroke-width="1"/><line x1="33" y1="20" x2="33" y2="26" stroke="#56ab2f" stroke-width="1"/><line x1="39" y1="20" x2="39" y2="26" stroke="#56ab2f" stroke-width="1"/><line x1="24" y1="26" x2="24" y2="32" stroke="#56ab2f" stroke-width="1"/><line x1="30" y1="26" x2="30" y2="32" stroke="#56ab2f" stroke-width="1"/><line x1="36" y1="26" x2="36" y2="32" stroke="#56ab2f" stroke-width="1"/><line x1="21" y1="32" x2="21" y2="38" stroke="#56ab2f" stroke-width="1"/><line x1="27" y1="32" x2="27" y2="38" stroke="#56ab2f" stroke-width="1"/><line x1="33" y1="32" x2="33" y2="38" stroke="#56ab2f" stroke-width="1"/><line x1="39" y1="32" x2="39" y2="38" stroke="#56ab2f" stroke-width="1"/><text x="100" y="31" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#fff" font-weight="bold">畳を相談する</text></svg>';
 
     button.onclick = toggle;
 
