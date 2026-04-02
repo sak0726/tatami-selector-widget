@@ -1,4 +1,3 @@
-
 (function (window, document) {
   if (window.self !== window.top) return;
   if (window.__YourAIWidgetLoaded) return;
@@ -16,7 +15,7 @@
     config = options || {};
 
     if (!config.siteId) {
-      console.error("YourAI: siteId is required");
+      console.error("siteId is required");
       return;
     }
 
@@ -50,13 +49,17 @@
   function createButton() {
 
     if (button) return;
+
     button = document.createElement("div");
+
     button.style.position = "fixed";
     button.style.bottom = "20px";
     button.style.right = "20px";
     button.style.width = "60px";
     button.style.height = "60px";
     button.style.backgroundImage = 'url("https://s-resonance.co.jp/wp-content/uploads/2026/02/cropped-logo-image-32x32.png")';
+    button.style.backgroundSize = "cover";
+    button.style.backgroundPosition = "center";
     button.style.color = "#fff";
     button.style.borderRadius = "50%";
     button.style.display = "flex";
@@ -78,7 +81,10 @@
 
     iframe = document.createElement("iframe");
 
-    iframe.src ="https://ai-tatami-select.hibiki-labsystem.online?siteId=" + encodeURIComponent(config.siteId) + "&sessionId=" + sessionId;
+iframe.src = "https://ai-tatami-select.hibiki-labsystem.online?t=" + encodeURIComponent(config.siteId);
+  
+
+    //iframe.src = "http://localhost:8000?siteId=" + encodeURIComponent(config.siteId) + "&sessionId=" + sessionId;
     iframe.style.position = "fixed";
     iframe.style.bottom = "90px";
     iframe.style.right = "20px";
